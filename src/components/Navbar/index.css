@@ -1,0 +1,86 @@
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 20px 30px;
+  background: slategrey;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+  box-shadow: 0rem 3rem 1rem rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  opacity: 0.9;
+  transition: 0.75s ease;
+}
+
+.nav-container:hover {
+  background: black;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.8);
+}
+
+.nav-container .nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-container .nav .link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.75s ease;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.nav-container:hover .link {
+  text-shadow: 1px 1px 6px white;
+}
+
+.link:hover {
+  letter-spacing: 0.75px;
+}
+
+.nav-container .nav .back-link {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  margin-right: 2.8rem;
+  transition: 0.75s ease;
+}
+
+.nav-container:hover .nav .back-link {
+  color: aliceblue;
+  scale: 1.1;
+}
+
+@media (max-width: 768px) {
+  .nav-container .nav .link {
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-top: 0.3rem;
+    margin-left: 1.2rem;
+  }
+
+  .nav-container .nav .back-link {
+    margin-right: 2rem;
+    font-size: 1.9rem;
+    margin-top: 0.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-container .nav .link {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 0.7rem;
+  }
+
+  .nav-container .nav .back-link {
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    margin-top: 0.2rem;
+  }
+}

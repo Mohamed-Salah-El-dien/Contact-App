@@ -1,0 +1,154 @@
+.post-container {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  margin-top: 9%;
+  border-radius: 5px;
+  box-shadow: 0rem 3rem 1rem rgba(0, 0, 0, 0.6);
+  background: slategrey;
+  transition: 0.75s ease;
+}
+
+.post-container:hover {
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.post-title {
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: white;
+  transition: 0.75s ease;
+}
+
+.post-container:hover .post-title {
+  text-shadow: 1px 1px 6px white;
+}
+
+.form-container {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.edit-container {
+  padding-top: 1rem;
+}
+
+.contact-input {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: black;
+  color: hsla(0, 1%, 61%, 0.9);
+  transition: 0.75s ease;
+}
+
+.contact-input:focus {
+  color: black;
+  background-color: white;
+}
+
+.add-btn {
+  margin-top: 2.5rem;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.add-btn:hover {
+  box-shadow: 0px 8px 16px 0px rgba(255, 254, 254, 0.5);
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 6px black;
+}
+
+@media (max-width: 1000px) {
+  .post-container {
+    margin-top: 11%;
+  }
+}
+@media (max-width: 900px) {
+  .post-container {
+    margin-top: 13%;
+  }
+}
+@media (max-width: 800px) {
+  .post-container {
+    margin-top: 14%;
+  }
+}
+@media (max-width: 700px) {
+  .post-container {
+    margin-top: 16%;
+  }
+}
+@media (max-width: 600px) {
+  .post-container {
+    margin-top: 18%;
+  }
+}
+@media (max-width: 500px) {
+  .post-container {
+    width: 400px;
+    height: 470px;
+    margin-top: 25%;
+  }
+}
+@media (max-width: 400px) {
+  .post-container {
+    width: 350px;
+    height: 400px;
+    margin-top: 40%;
+  }
+
+  .post-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-input {
+    font-size: 1.2rem;
+    width: 100%;
+    margin-left: 0.1rem;
+  }
+
+  .add-btn {
+    margin-top: 1rem;
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 300px) {
+  .post-container {
+    width: 250px;
+    height: 380px;
+    margin-top: 50%;
+  }
+
+  .post-title {
+    font-size: 2rem;
+  }
+
+  .contact-input {
+    font-size: 1.2rem;
+    width: 90%;
+    margin-left: 0.6rem;
+  }
+
+  .add-btn {
+    margin-top: 0.2rem;
+    width: 95%;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+}
